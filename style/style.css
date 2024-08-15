@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(186, 215, 255);
+}
+.container {
+  width: 900px !important;
+}
+
+.page {
+  background-color: white;
+  transform: translateY(50px);
+  min-height: 550px;
+}
+.page > button {
+  background-color: rgb(0, 0, 79);
+  color: white;
+  border: none;
+  position: absolute;
+  right: 80px;
+  bottom: 50px;
+}
+/* sidebar start  */
+.page .sidebar {
+  background-image: url("../imgs/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.page .sidebar .step > span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  color: white;
+}
+.page .sidebar .step.active > span {
+  background-color: rgb(182, 191, 255);
+  border: none;
+  color: rgb(0, 0, 79);
+}
+.page .sidebar .step .txt {
+  margin-top: -6px;
+}
+.page .sidebar .step .txt span {
+  color: #ccc;
+  font-size: 12px;
+}
+.page .sidebar .step .txt p {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+/* sidebar end  */
+
+/* step 1 start  */
+.step-one {
+  color: rgb(0, 0, 79);
+}
+.step-one > p {
+  color: #bbb;
+}
+
+.step-one form input {
+  border: 1px solid #ccc;
+}
+.step-one form input:focus {
+  outline: none;
+}
+/* step 1 end  */
+/* step 2 start  */
+.step-two {
+  color: rgb(0, 0, 79);
+}
+.step-two .cards .card {
+  border: 1px solid #ccc !important;
+  cursor: pointer;
+}
+.step-two .cards .card.selected {
+  border-color: rgb(61, 61, 255) !important;
+}
+.step-two .cards .card img {
+  width: 40%;
+}
+.step-two .cards .card p {
+  color: rgb(0, 0, 79);
+}
+.step-two .select-box span {
+  color: #ccc;
+}
+.step-two .select-box span.active {
+  color: rgb(0, 0, 79);
+  font-weight: bold;
+}
+.step-two .select-box .bullet {
+  width: 30px;
+  height: 15px;
+  background-color: rgb(0, 0, 79);
+  position: relative;
+  cursor: pointer;
+}
+.step-two .select-box .bullet::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+}
+.step-two .select-box .bullet.month::after {
+  left: 1px;
+}
+.step-two .select-box .bullet.year::after {
+  right: 1px;
+}
+/* step 2 end  */
+/* step 3 start  */
+.step-three {
+  color: rgb(0, 0, 79);
+}
+.step-three > p {
+  color: #ccc;
+}
+.step-three .box {
+  border: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+}
+.step-three .box.selected {
+  background-color: rgba(208, 219, 248, 0.259);
+  border-color: rgb(61, 61, 255);
+}
+.step-three .box .txt .gray {
+  color: #ccc;
+}
+.step-three .box span {
+  position: absolute;
+  right: 15px;
+  color: rgb(61, 61, 255);
+}
+
+/* step 3 end  */
+
+/* step 4 start  */
+.step-four > h2 {
+  color: rgb(0, 0, 79);
+}
+.step-four > p {
+  color: #ccc;
+}
+
+.selection-box {
+  background-color: #eee;
+  padding: 10px;
+}
+.selection-box .sub {
+  position: relative;
+  color: rgb(0 0 79);
+  font-weight: bold;
+}
+.selection-box .sub p {
+  display: inline-block;
+}
+.selection-box .sub span {
+  position: absolute;
+  right: 10px;
+}
+.step-four .total {
+  margin-top: 20px;
+  position: relative;
+}
+.step-four .total p {
+  display: inline;
+  color: #aaa;
+  font-weight: bold;
+}
+.step-four .total span {
+  color: rgb(61, 61, 255);
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+}
+/* step 4 end  */
